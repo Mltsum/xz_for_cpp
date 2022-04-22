@@ -1,0 +1,1 @@
+adb push build/xz_compress /data/local/tmp/

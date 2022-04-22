@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.17)
-project(cppDemo)
+project(xz_compress)
 
 set(CMAKE_CXX_STANDARD 11)
 
@@ -14,11 +14,11 @@ include_directories(
 )
 
 link_directories(
-        ./libs/lzma/bin/mac/debug/
+        ./libs/lzma/bin
 )
 
-add_executable(cppDemo main.cpp src/xz/decode.cpp src/xz/encode.cpp)
+add_executable(xz_compress main.cpp src/xz/decode.cpp src/xz/encode.cpp)
 
-target_link_libraries(cppDemo
+target_link_libraries(xz_compress
         liblzma.a
         )
